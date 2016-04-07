@@ -8,8 +8,8 @@
             <generator class="identity"/>
         </id>
 
-        <property name="movieName" type="java.lang.String" column="name"/>
-        <property name="movieDescription" type="java.lang.String" column="description"/>
+        <property name="name" type="java.lang.String" column="name"/>
+        <property name="description" type="java.lang.String" column="description"/>
 
     </class>
 </hibernate-mapping>

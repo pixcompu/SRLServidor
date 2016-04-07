@@ -8,38 +8,32 @@ import java.io.Serializable;
  */
 public class Movie implements Serializable {
     private int id;
-    private String movieName;
-    private String movieDescription;
-
-    public Movie(String movieName, String movieDescription) {
-        this.movieName = movieName;
-        this.movieDescription = movieDescription;
-    }
-
-    public Movie() {
-    }
+    private String name;
+    private String description;
 
     public int getId() {
         return id;
     }
-
+    
     public void setId(int id) {
         this.id = id;
     }
 
-    public String getMovieDescription() {
-        return movieDescription;
+    public String getName() {
+        return name;
     }
 
-    public void setMovieDescription(String movieDescription) {
-        this.movieDescription = movieDescription;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getMovieName() {
-        return movieName;
+    public String getDescription() {
+        return description;
     }
 
-    public void setMovieName(String movieName) {
-        this.movieName = movieName;
+    public void setDescription(String description) {
+        this.description = description;
     }
+
+    
 }

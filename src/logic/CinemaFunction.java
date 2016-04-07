@@ -53,19 +53,4 @@ public class CinemaFunction implements Serializable{
         this.schedule = schedule;
     }
 
-    public void printFunctionInformation(){
-        System.out.println("Movie ID : " + movie.getId());
-        System.out.println("Movie Name : " + movie.getMovieName());
-        System.out.println("Movie Description : " + movie.getMovieDescription());
-        System.out.println("Function Schedule : " + schedule);
-        System.out.println("Seats : ");
-        System.out.println("Rows  : " + room.getRows() + " Columns :" +room.getColumns() );
-        room.setUpSeats();
-        for(int[] seatRow : room.getSeats()){
-            for(int i = 0; i < seatRow.length; i++){
-                System.out.print("[" + seatRow[i] + "] ");
-            }
-            System.out.println("");
-        }
-    }
 }

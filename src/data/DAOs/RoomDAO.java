@@ -33,6 +33,7 @@ public class RoomDAO extends AbstractDAO<Room> {
         SQLQuery q = session.createSQLQuery("SELECT * from room WHERE id_room = " + objectId);
         List<Object[]> entities = q.list();
         Room room = new Room();
+        room.setId(objectId);
         room.setRows(5);
         room.setColumns(10);
         int[][] seats = new int[5][10];
