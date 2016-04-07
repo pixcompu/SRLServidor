@@ -1,30 +1,13 @@
 package ui;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Insets;
-import java.awt.Toolkit;
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.TitledBorder;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import javax.swing.Box;
-import javax.swing.BoxLayout;
-import javax.swing.JButton;
-import javax.swing.JFileChooser;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JSpinner;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import javax.swing.SpinnerNumberModel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.border.TitledBorder;
-import javax.swing.filechooser.FileFilter;
-import javax.swing.filechooser.FileNameExtensionFilter;
-import logic.CinemaFunction;
-import logic.Movie;
-import logic.Room;
 
 /**
  *
@@ -80,7 +63,7 @@ public class FormCreateFunctions extends javax.swing.JFrame{
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        content = new javax.swing.JPanel();
+        content = new JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -145,7 +128,7 @@ public class FormCreateFunctions extends javax.swing.JFrame{
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel content;
+    private JPanel content;
     // End of variables declaration//GEN-END:variables
 
     private JPanel getPanelMovieData() {
@@ -309,7 +292,7 @@ public class FormCreateFunctions extends javax.swing.JFrame{
 
         if (validFields) {
 
-            Movie movie = new Movie("0", textName.getText(), textDescription.getText());
+           /* Movie movie = new Movie("0", textName.getText(), textDescription.getText());
             Room room = new Room(5, 10);
             String scheduleTemplate = "Inicio %d : %d , Fin %d : %d";
             String schedule = String.format(scheduleTemplate,
@@ -318,7 +301,7 @@ public class FormCreateFunctions extends javax.swing.JFrame{
                     getNumber(spinnerFinishHour),
                     getNumber(spinnerFinishMinute));
             CinemaFunction function = new CinemaFunction(room, movie, schedule);
-
+*/
         }
     }
         

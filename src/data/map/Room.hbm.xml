@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="logic.Room" table="room">
+        <id name="id" column="id_room">
+            <generator class="assigned"/>
+        </id>
+        <property name="columns" type="java.lang.Integer" column="mat_column"/>
+        <property name="rows" type="java.lang.Integer" column="mat_row"/>
+        <property name="seatsValue" type="java.lang.Integer" column="value"/>
+        
+
+    </class>
+</hibernate-mapping>
