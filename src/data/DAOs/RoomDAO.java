@@ -55,6 +55,7 @@ public class RoomDAO extends AbstractDAO<Room> {
         String query = "UPDATE room SET value = " + newSeatState  + " WHERE id_room = " + roomID + " AND mat_row = " + column + " AND mat_column = " + row;
         SQLQuery q = session.createSQLQuery(query);
         int updateState = q.executeUpdate();
+        transaction.commit();
         session.close();
     }
 }
