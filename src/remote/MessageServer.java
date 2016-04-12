@@ -51,7 +51,9 @@ public class MessageServer implements Runnable {
         while (APLICATION_RUNNING) {
             try {
                 Socket client = server.accept();
-                System.out.println("New client in : " + client.getInetAddress());
+                System.out.println("-------------------------------------------");
+                System.out.println("NUEVO CLIENTE : " + client.getInetAddress());
+                System.out.println("-------------------------------------------");
                 ClientConnection clientConnection = new ClientConnection(client);
                 connections.add(clientConnection);
             } catch (IOException ex) {
@@ -67,7 +69,9 @@ public class MessageServer implements Runnable {
             }
             destinatary.getOutputStream().flush();
         } catch (IOException ex) {
-            Logger.getLogger(MessageServer.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println(ex.getMessage());
+//System.out.println("Desconectado de " + destinatary.getSocket().getInetAddress() + " cliente inalcanzable, error : " + ex.getMessage());
+            //connections.remove(destinatary);
         }
     }
 }
