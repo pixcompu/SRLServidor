@@ -20,7 +20,7 @@ public class Launcher {
     private static final int SERVER_MESSAGE_PORT = 1099;
     private static final int SERVER_RMI_PORT = 1098;
     private static final String SERVER_RMI_PROPERTY = "java.rmi.server.hostname";
-    private static final String SERVER_RMI_IP_ADDRESS = "127.0.0.1";
+    private static final String SERVER_RMI_IP_ADDRESS = "192.168.228.30";
     private static final String SERVER_RMI_SERVICE_NAME = "Movie";
 
     public static void main(String[] args) throws SQLException {
